@@ -109,7 +109,7 @@ p {
 }
 
 .nft-image:hover::after {
-	display: block;
+	display: flex;
 }
 
 .nft {
@@ -122,9 +122,12 @@ p {
 	color: #fff;
 	position: absolute;
 	display: none;
-	background-color: hsl(178, 100%, 50%);
+	background-color: hsla(178, 100%, 50%, 0.37);
 	cursor: pointer;
-	opacity: 0.55;
+
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	top: 0;
 	left: 0;
 	width: 100%;
