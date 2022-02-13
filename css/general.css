@@ -1,0 +1,191 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font Sizes (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weights
+    Default: 400
+
+
+- Line Heights
+    Default: 1
+
+
+--- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+--- 02 Colours
+- Primary:
+- Tints: 
+- Shades: 
+- Accents: 
+
+- Greys: 
+
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER RADIUS
+
+
+--- 07 WHITESPACE
+
+*/
+
+/* Initial CSS Set Up */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* set rem size to 10px */
+	font-size: 62.5%;
+}
+
+body {
+	color: hsl(0, 0%, 100%);
+	font-family: "Outfit", sans-serif;
+}
+
+h1 {
+	margin-bottom: 2.4rem;
+}
+
+p {
+	font-size: 1.8rem;
+	color: hsl(215, 51%, 70%);
+	line-height: 1.6;
+}
+
+/*
+    Grid classes
+*/
+.grid {
+	display: grid;
+}
+
+.grid-1-col {
+	grid-template-columns: 1fr;
+}
+
+.grid-2-cols {
+	grid-template-columns: 1fr 1fr;
+}
+
+/*
+*/
+.container {
+	background-color: hsl(217, 54%, 11%);
+	padding: 8rem;
+}
+
+.highlight {
+	color: hsl(0, 0%, 100%);
+}
+
+.highlight:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
+
+.nft-card {
+	position: relative;
+	background-color: hsl(216, 50%, 16%);
+	border-radius: 1rem;
+	margin: 0 auto;
+	max-width: 40rem;
+	padding: 3.2rem 2.4rem;
+	gap: 2.4rem;
+}
+
+.nft-image {
+	border-radius: 1rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.nft-image:hover::after {
+	display: block;
+}
+
+.nft {
+	width: 100%;
+	transform: scale(1.15);
+}
+
+.nft-image::after {
+	content: url(/images/icon-view.svg);
+	color: #fff;
+	position: absolute;
+	display: none;
+	background-color: hsl(178, 100%, 50%);
+	cursor: pointer;
+	opacity: 0.55;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.nft-name {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+
+.nft-name:hover {
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
+
+.nft-auction-details {
+	padding-top: 2.4rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.6rem;
+}
+
+.price {
+	color: hsl(178, 100%, 50%);
+	font-weight: 600;
+}
+
+.currency-symbol {
+	padding-right: 1.2rem;
+}
+
+.duration {
+	color: hsl(215, 51%, 70%);
+}
+
+.nft-footer {
+	display: flex;
+	border-top: 1px solid hsl(215, 32%, 27%);
+	padding-top: 2.4rem;
+	align-items: center;
+}
+
+.attribution {
+	color: #000;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.author-avatar {
+	width: 3.6rem;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px #fff;
+}
+
+.author {
+	display: inline-block;
+	padding-left: 2rem;
+	font-size: 1.6rem;
+	color: hsl(215, 51%, 70%);
+}
