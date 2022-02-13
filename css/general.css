@@ -114,7 +114,6 @@ p {
 
 .nft {
 	width: 100%;
-	transform: scale(1.15);
 }
 
 .nft-image::after {
@@ -191,4 +190,14 @@ p {
 	padding-left: 2rem;
 	font-size: 1.6rem;
 	color: hsl(215, 51%, 70%);
+}
+
+@media (max-width: 30em) {
+	html {
+		font-size: 50%;
+	}
+
+	.container {
+		padding: 4.8rem;
+	}
 }
