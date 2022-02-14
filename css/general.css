@@ -5,10 +5,13 @@
 
 - Font Weights
     Default: 400
+    600
+    700
 
 
 - Line Heights
     Default: 1
+    Paragraph: 1.6
 
 
 --- SPACING SYSTEM (px)
@@ -16,19 +19,24 @@
 
 
 --- 02 Colours
-- Primary:
+- Primary: hsl(217, 54%, 11%)
 - Tints: 
+hsl(0, 0%, 100%);
+hsl(228, 45%, 44%);
+hsl(215, 51%, 70%);
+hsl(216, 50%, 16%);
 - Shades: 
 - Accents: 
+hsl(178, 100%, 50%);
 
 - Greys: 
 
 
 --- 05 SHADOWS
-
+-10px 25px 30px 15px #0e1826;
 
 --- 06 BORDER RADIUS
-
+50%
 
 --- 07 WHITESPACE
 
@@ -100,6 +108,7 @@ p {
 	max-width: 40rem;
 	padding: 3.2rem 2.4rem;
 	gap: 2.4rem;
+	box-shadow: -10px 25px 30px 15px #0e1826;
 }
 
 .nft-image {
