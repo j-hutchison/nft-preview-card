@@ -126,7 +126,7 @@ p {
 }
 
 .nft-image::after {
-	content: url(./images/icon-view.svg);
+	content: url(../images/icon-view.svg);
 	color: #fff;
 	position: absolute;
 	display: none;
